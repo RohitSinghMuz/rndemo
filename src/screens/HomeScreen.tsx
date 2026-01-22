@@ -7,8 +7,8 @@ import style from "./Style";
 
 const HomeScreen: React.FC = () => {
   const barChartData: BarChartData = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May"],
-    datasets: [{ data: [40, 55, 30, 80, 60] }],
+    labels: ["Jan", "Feb", "Mar", "Apr", "May","June","July","Aug"],
+    datasets: [{ data: [40, 55, 30, 80, 60,90,80,50] }],
   };
 
   return (
