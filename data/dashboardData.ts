@@ -6,6 +6,8 @@ const dashboardData = [
       target: '36.8 Mio',
       achievement: '13.9 Mio',
       color: '#3FAE5A',
+      activeText:'NIM',
+      tabText:'F&B'
     },
     {
       id: '2',
@@ -14,6 +16,8 @@ const dashboardData = [
       target: '36.2 Mio',
       achievement: '11.6 Mio',
       color: '#D65C6C',
+      activeText:'NIM',
+      tabText:'F&B'
     },
   ];
   

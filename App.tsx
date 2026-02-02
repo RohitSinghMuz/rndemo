@@ -10,6 +10,8 @@ import MyProgressBar from './src/screens/MyProgressBar';
 import MyProgressChart from './src/screens/MyProgressChart';
 import MyCircularProgress from './src/screens/MyCircularProgress';
 import DashboardScreen from './src/screens/DashboardScreen'; 
+import SalesDashboard from './src/screens/SalesDashboard';
+import TopCategoryScreen from './src/screens/opCategoryScreen';
 
 
 function App() {
@@ -22,9 +24,11 @@ function App() {
       {/* <HomeScreen />
       <PieChartData/>
       <MyProgressBar progress={65} />
-      <MyProgressChart/>
-      <MyCircularProgress/> */}
-      <DashboardScreen/>
+      <MyProgressChart/> */}
+      {/* <MyCircularProgress/> */}
+      {/* <DashboardScreen/> */}
+      {/* <SalesDashboard/> */}
+      <TopCategoryScreen/>
       </ScrollView>
     </SafeAreaProvider>
   );

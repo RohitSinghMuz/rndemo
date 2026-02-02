@@ -8,34 +8,33 @@ const DashboardCard = ({ item }: any) => {
       {/* Title */}
       <Text style={styles.title}>{item.title}</Text>
 
-      {/* Tabs */}
       <View style={styles.tabs}>
         <View style={styles.activeTab}>
-          <Text style={styles.activeTabText}>NIM</Text>
+          <Text style={styles.activeTabText}>{item.activeText}</Text>
         </View>
         <View style={styles.tab}>
-          <Text style={styles.tabText}>F&B</Text>
+          <Text style={styles.tabText}>{item.tabText}</Text>
         </View>
       </View>
 
       <View style={styles.gaugeWrapper}>
-  <AnimatedCircularProgress
-    size={120}
-    width={12}
-    fill={item.percent}
-    tintColor={item.color}
-    backgroundColor="#E5E5E5"
-    rotation={-100}
-    arcSweepAngle={200}
-    lineCap="round"
-  >
-    {() => (
-      <Text style={[styles.percent, { color: item.color }]}>
-        {item.percent}%
-      </Text>
-    )}
-  </AnimatedCircularProgress>
-</View>
+        <AnimatedCircularProgress
+          size={120}
+          width={12}
+          fill={item.percent}
+          tintColor={item.color}
+          backgroundColor="#E5E5E5"
+          rotation={-100}
+          arcSweepAngle={200}
+          lineCap="round"
+        >
+          {() => (
+            <Text style={[styles.percent, { color: item.color }]}>
+              {item.percent}%
+            </Text>
+          )}
+        </AnimatedCircularProgress>
+      </View>
 
       <View style={styles.bottom}>
         <View>
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
     width: 185,
     backgroundColor: '#FFF',
     borderRadius: 16,
-    padding:12,
+    padding: 12,
     marginRight: 16,
     elevation: 3,
   },
@@ -111,5 +110,5 @@ const styles = StyleSheet.create({
   },
   gaugeWrapper: {
     marginBottom: -30,
-  }
+  },
 });
