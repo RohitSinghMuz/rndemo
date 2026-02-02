@@ -5465,7 +5465,7 @@ react-native-safe-area-context@^5.5.2:
 
 react-native-svg@^15.15.1:
   version "15.15.1"
-  resolved "https://registry.npmjs.org/react-native-svg/-/react-native-svg-15.15.1.tgz"
+  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-15.15.1.tgz#0b08716f5c389ef8550a73492c985c7b23849d65"
   integrity sha512-ZUD1xwc3Hwo4cOmOLumjJVoc7lEf9oQFlHnLmgccLC19fNm6LVEdtB+Cnip6gEi0PG3wfvVzskViEtrySQP8Fw==
   dependencies:
     css-select "^5.1.0"
