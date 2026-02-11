@@ -12,7 +12,7 @@ import MyCircularProgress from './src/screens/MyCircularProgress';
 import DashboardScreen from './src/screens/DashboardScreen'; 
 import SalesDashboard from './src/screens/SalesDashboard';
 import TopCategoryScreen from './src/screens/opCategoryScreen';
-import BusinessScreen from './progressbar/BusinessScreen';
+import BusinessScreen from './src/progressbar/BusinessScreen';
 
 
 function App() {

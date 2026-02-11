@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, FlatList, Text } from 'react-native';
-import dashboardData from '../../data/dashboardData';
-import DashboardCard from '../../components/DashboardCard';
+import dashboardData from '../data/dashboardData';
+import DashboardCard from '../commoncomponents/DashboardCard';
 
 const DashboardScreen = () => {
   return (
