@@ -15,7 +15,7 @@ export const getFont = ({ font, size, color }: FontStyleParams) => ({
 });
 
 const FontStyles = StyleSheet.create({
-  montserratM14Black: getFont({font: Fonts.MONTSERRAT_M,size: 14,color: Colors.black}),
+  montserratM14Black: getFont({font: Fonts.MONTSERRAT_M,size: 26,color: Colors.yellow}),
 
 });
 

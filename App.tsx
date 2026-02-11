@@ -1,5 +1,5 @@
 
-import { ScrollView, StatusBar, useColorScheme } from 'react-native';
+import { ScrollView, StatusBar, useColorScheme,Text } from 'react-native';
 import React from 'react';
 import {
   SafeAreaProvider,
@@ -13,6 +13,7 @@ import DashboardScreen from './src/screens/DashboardScreen';
 import SalesDashboard from './src/screens/SalesDashboard';
 import TopCategoryScreen from './src/screens/opCategoryScreen';
 import BusinessScreen from './src/progressbar/BusinessScreen';
+import FontStyles from './src/utils/FontStyles';
 
 
 function App() {
@@ -21,13 +22,14 @@ function App() {
   return (
     <SafeAreaProvider>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <Text style={{...FontStyles.montserratM14Black}}>Rohit Singh</Text>
       <ScrollView>
       <HomeScreen />
       <PieChartData/>
       <MyProgressBar progress={65} />
       <MyProgressChart/>
       <MyCircularProgress/>
-      <DashboardScreen/>
+      {/* <DashboardScreen/> */}
       <SalesDashboard/>
       <TopCategoryScreen/>
       <BusinessScreen/>
