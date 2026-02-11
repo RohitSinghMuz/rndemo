@@ -12,6 +12,7 @@ import MyCircularProgress from './src/screens/MyCircularProgress';
 import DashboardScreen from './src/screens/DashboardScreen'; 
 import SalesDashboard from './src/screens/SalesDashboard';
 import TopCategoryScreen from './src/screens/opCategoryScreen';
+import BusinessScreen from './progressbar/BusinessScreen';
 
 
 function App() {
@@ -21,14 +22,15 @@ function App() {
     <SafeAreaProvider>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <ScrollView>
-      {/* <HomeScreen />
+      <HomeScreen />
       <PieChartData/>
       <MyProgressBar progress={65} />
-      <MyProgressChart/> */}
-      {/* <MyCircularProgress/> */}
-      {/* <DashboardScreen/> */}
-      {/* <SalesDashboard/> */}
+      <MyProgressChart/>
+      <MyCircularProgress/>
+      <DashboardScreen/>
+      <SalesDashboard/>
       <TopCategoryScreen/>
+      <BusinessScreen/>
       </ScrollView>
     </SafeAreaProvider>
   );
