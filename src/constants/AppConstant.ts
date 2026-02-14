@@ -12,3 +12,8 @@ export enum SHORT_MONTH_NAMES {
   NOV = 'Nov',
   DEC = 'Dec',
 }
+
+export enum PLATFORM_OS_TYPE{
+    IOS='ios',
+    ANDROID='Android',
+}

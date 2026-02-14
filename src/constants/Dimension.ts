@@ -21,7 +21,7 @@ export function normalize(size: number) {
 }
 
 /* ---------- Vertical Scale (height based) ---------- */
-export function normalizeVertical(size: number) {
+export function normalizeNew(size: number) {
   const newSize = (SCREEN_HEIGHT / BASE_HEIGHT) * size;
   return Math.round(PixelRatio.roundToNearestPixel(newSize));
 }
@@ -50,12 +50,12 @@ export function moderateScale(size: number, factor = 0.5) {
 
 /* ---------- Exports ---------- */
 export default {
-  normalize,
-  normalizeVertical,
-  normalizeTablet,
-  moderateScale,
+  n:normalize,
+  nn:normalizeNew,
+  tab:normalizeTablet,
+  M:moderateScale,
   SCREEN_WIDTH,
   SCREEN_HEIGHT,
-  isIpad,
-  isTablet,
+  tabT:isIpad,
+  isTablet:isTablet,
 };

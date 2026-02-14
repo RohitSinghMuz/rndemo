@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { BarChartData } from "../types/BarChart";
-import BarChartView from "../component/BarChart/BarChartView";
+import BarChartView from "../commoncomponents/cBarChart/BarChartView";
 import style from "./Style";
 
 
