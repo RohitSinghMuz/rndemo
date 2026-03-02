@@ -7,13 +7,12 @@ import {
 import HomeScreen from './src/screens/HomeScreen';
 import PieChartData from './src/screens/PieChartData';
 import MyProgressBar from './src/screens/MyProgressBar';
-import MyProgressChart from './src/screens/MyProgressChart';
-import MyCircularProgress from './src/screens/MyCircularProgress';
-import DashboardScreen from './src/screens/DashboardScreen'; 
-import SalesDashboard from './src/screens/SalesDashboard';
-import TopCategoryScreen from './src/screens/opCategoryScreen';
-import BusinessScreen from './src/progressbar/BusinessScreen';
-import FontStyles from './src/utils/FontStyles';
+import FontStyles from 'src/assets/stylesheets/FontStyles';
+import MyProgressChart from 'src/screens/home/MyProgressChart';
+import MyCircularProgress from 'src/screens/home/MyCircularProgress';
+import SalesDashboard from 'src/screens/home/SalesDashboard';
+import TopCategoryScreen from 'src/screens/home/opCategoryScreen';
+import BusinessScreen from 'src/progressbar/BusinessScreen';
 
 
 function App() {
@@ -22,17 +21,9 @@ function App() {
   return (
     <SafeAreaProvider>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Text style={{...FontStyles.montserratM14Black}}>Rohit Singh</Text>
+      <Text  >Rohit Singh</Text>
       <ScrollView>
-      <HomeScreen />
-      <PieChartData/>
-      <MyProgressBar progress={65} />
-      <MyProgressChart/>
-      <MyCircularProgress/>
-      {/* <DashboardScreen/> */}
-      <SalesDashboard/>
-      <TopCategoryScreen/>
-      <BusinessScreen/>
+     
       </ScrollView>
     </SafeAreaProvider>
   );
